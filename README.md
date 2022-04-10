@@ -6,4 +6,6 @@ Move your hidden windows in Windows! Small tool to move windows to a specific lo
 
 ![Screenshot Window Mover](screenshot.png)
 
+## Homepage
 
+<a href="https://ekiwi-blog.de/en/windowmover-for-windows/" target="_blank">Visit our blog!</a>
