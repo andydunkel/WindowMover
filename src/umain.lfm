@@ -82,4 +82,19 @@ object Form1: TForm1
     OnClick = ButtonRefreshWindowsClick
     TabOrder = 2
   end
+  object Label4: TLabel
+    Cursor = crHandPoint
+    Left = 600
+    Height = 15
+    Top = 367
+    Width = 73
+    Caption = 'eKiwi-blog.de'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlue
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsUnderline]
+    ParentFont = False
+    OnClick = Label4Click
+  end
 end

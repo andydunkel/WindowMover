@@ -5,7 +5,7 @@ unit uMain;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, MaskEdit,
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, MaskEdit, LCLIntf,
   Windows;
 
 type
@@ -21,10 +21,12 @@ type
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
+    Label4: TLabel;
     ListBoxWindows: TListBox;
     procedure ButtonMoveWindowClick(Sender: TObject);
     procedure ButtonRefreshWindowsClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure Label4Click(Sender: TObject);
   private
 
   public
@@ -46,6 +48,11 @@ procedure TForm1.FormCreate(Sender: TObject);
 begin
      ListBoxWindows.Items.Clear();
      EnumWindows(@EnumWindowsProc,0);
+end;
+
+procedure TForm1.Label4Click(Sender: TObject);
+begin
+  OpenUrl('https://ekiwi-blog.de');
 end;
 
 procedure TForm1.ButtonMoveWindowClick(Sender: TObject);
